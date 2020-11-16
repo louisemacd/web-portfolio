@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+/*The following adds the background image to the page */
+body {
+  background-image: url("images/city.JPG");
+  background-size: cover;
+}
+/*The following sets color and aligns text in header and footer*/
+header, footer {
+  background-color: black;
+  text-align: center;
+}
+/*The following sets font properties, padding, and margins for the first heading in the header*/
+h1 {
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  color: rgb(252, 72, 1);
+  font-size: 56px;
+  padding: 50px 50px 0px 50px;
+  margin: 0px;
+}
+/*The following edits the text for the article headings*/
+h2 {
+font-family: Georgia, Palatino, serif;
+text-align: center;
+}
+/*All other text on the page has the same font*/
+h3, p, ul, ol {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Font color and italics for the footer and "future software developer" in the header*/
+header > h3, footer {
+  font-style: italic;
+  color:white;
+}
+/*This just sets padding and margin for the subheading in the header*/
+header > h3 {
+  padding: 10px 50px 20px 50px;
+  margin: 0px;
+}
+/*This sets font settings and padding for the navigational links*/
+nav {
+  text-align: center;
+  font-style: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  padding: 0px 0px 20px 0px;
+}
+/*This sets the color properties for all the links on the page*/
+a:link {color: rgb(252, 72, 1)}
+a:visited {color: rgb(189, 53, 0);}
+a:hover {color: rgb(255, 238, 2)}
+a:active {color: rgb(255, 165, 129)}
+
+/*This sets the size and background of the main content box*/
+main {
+  width: 750px;
+  margin: 25px auto 25px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+/*This centers the picture of me*/
+.center {
+  text-align: center
+}
+/*This makes the picture of me a bit rounded and adds a border*/
+.rounded {
+  border-radius: 5%; 
+  border: 1px solid grey
+}
+
+/*This makes the footer a specific size and gives some padding to the text so it is not right at the top of the footer box*/
+footer {
+  height: 100px;
+  padding: 10px;
+}
