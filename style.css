@@ -1,27 +1,41 @@
 * {
   box-sizing: border-box;
 }
-/*The following adds the background image to the page */
+/*The following sets the margin of the body to 0 */
 body {
-  background-image: url("images/city.JPG");
-  background-size: cover;
+  margin: 0px;
 }
-/*The following sets color and aligns text in header and footer*/
+/*The following sets background color in header and footer*/
 header, footer {
   background-color: black;
-  text-align: center;
+}
+
+/*The following stops the black bar in the header from disappearing and creates space inbetween the heading h1 and the navigational links */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*The following makes the heading h1 align to the left and the navigational links align to the right */
+.heading {
+  float: left;
+}
+
+.nav-links {
+  float: right;
 }
 /*The following sets font properties, padding, and margins for the first heading in the header*/
 h1 {
-  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
-  color: rgb(252, 72, 1);
-  font-size: 56px;
-  padding: 50px 50px 0px 50px;
+  font-family: 'Dawning of a New Day', cursive;
+  color: #9CBCD9;
+  font-size: 40px;
+  padding: 25px 0px 25px 25px;
   margin: 0px;
+  
 }
 /*The following edits the text for the article headings*/
 h2 {
-font-family: Georgia, Palatino, serif;
+font-family: 'Architects Daughter', cursive;
 text-align: center;
 }
 /*All other text on the page has the same font*/
@@ -29,35 +43,40 @@ h3, p, ul, ol {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/*Font color and italics for the footer and "future software developer" in the header*/
-header > h3, footer {
-  font-style: italic;
-  color:white;
-}
-/*This just sets padding and margin for the subheading in the header*/
-header > h3 {
-  padding: 10px 50px 20px 50px;
-  margin: 0px;
-}
 /*This sets font settings and padding for the navigational links*/
 nav {
-  text-align: center;
-  font-style: Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  padding: 0px 0px 20px 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding: 50px 25px 25px 0px;
+  text-align: right;
 }
 /*This sets the color properties for all the links on the page*/
-a:link {color: rgb(252, 72, 1)}
-a:visited {color: rgb(189, 53, 0);}
-a:hover {color: rgb(255, 238, 2)}
-a:active {color: rgb(255, 165, 129)}
+a:link {color: #697C8C}
+a:visited {color: #546b25;}
+a:hover {color: #9CBCD9}
+a:active {color: rgb(32, 111, 160)}
 
-/*This sets the size and background of the main content box*/
+/*This sets the background color of the main content box*/
 main {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/*This sets the main content so that the text all remains centered on the page, rather than spread across the entire page*/
+.main-content, .introduction {
   width: 750px;
-  margin: 25px auto 25px auto;
+  margin: 0px auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.76);
+}
+/*This sets a background image on the first section of the website*/
+.first-section {
+  background-image: url("images/boston.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  text-align: center;
+}
+/*This makes the first horizontal rule fall directly under the background image*/
+.hr1 {
+  margin-top: 0px;
 }
 /*This centers the picture of me*/
 .center {
@@ -69,8 +88,17 @@ main {
   border: 1px solid grey
 }
 
-/*This makes the footer a specific size and gives some padding to the text so it is not right at the top of the footer box*/
+/*This makes the footer a specific size and gives some padding to the text so it is not right at the top of the footer box. It also changes the font color and makes the font appear in italics.*/
 footer {
   height: 100px;
   padding: 10px;
+  font-style: italic;
+  color:white;
+  text-align: center;
+}
+
+/*This makes the horizontal ruler solid black*/
+hr {
+  background-color: black;
+  border: 0.5px solid black;
 }
