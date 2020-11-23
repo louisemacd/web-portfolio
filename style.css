@@ -7,7 +7,7 @@ body {
 }
 /*The following sets background color in header and footer*/
 header, footer {
-  background-color: black;
+  background: black;
 }
 
 /*The following stops the black bar in the header from disappearing and creates space inbetween the heading h1 and the navigational links */
@@ -62,7 +62,7 @@ main {
 }
 /*This sets the main content so that the text all remains centered on the page, rather than spread across the entire page*/
 .main-content, .introduction {
-  width: 750px;
+  max-width: 750px;
   margin: 0px auto;
   padding: 20px;
 }
@@ -71,6 +71,7 @@ main {
   background-image: url("images/boston.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 500px;
   text-align: center;
 }
